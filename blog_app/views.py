@@ -12,6 +12,7 @@ def create_author(request):
         form = AuthorForm()
     return render(request, 'create_author.html', {'form': form})
 
+
 def create_post(request):
     if request.method == 'POST':
         form = PostForm(request.POST)

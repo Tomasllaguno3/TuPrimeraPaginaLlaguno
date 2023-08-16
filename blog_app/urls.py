@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from .views import *
 
 urlpatterns = [
-    path('create_author/', views.create_author, name='create_author'),
-    path('create_post/', views.create_post, name='create_post'),
-    path('create_comment/', views.create_comment, name='create_comment'),
-    path('search/', views.search, name='search'),]
+    path('create_author/', create_author, name='create_author'),
+    path('create_post/', create_post, name='create_post'),
+    path('create_comment/', create_comment, name='create_comment'),
+    path('search/', search, name='search'),]
